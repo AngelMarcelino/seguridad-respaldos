@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello world</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+</head>
+<body>
+  <h1>Sistema de respaldos</h1>
+  <div>
+    <h2>Intervalo del respaldo</h2>
+    <div class="form-group">
+      <label for="interval_days">Dias</label>
+      <input type="number" min="0" class="form-control" id="interval_days" name="interval_days">
+    </div>
+    <div class="form-group">
+      <label for="interval_hours">Horas</label>
+      <input type="number" min="0" class="form-control" id="interval_hours" name="interval_hours">
+    </div>
+    <div class="form-group">
+      <label for="interval_minutes">Minutos</label>
+      <input type="number" min="0" class="form-control" id="interval_minutes" name="interval_minutes">
+    </div>
+  </div>
+
+  <div>
+    <h2>Datos del servidor ftp destino</h2>
+    <div class="form-group">
+      <label for="uri">URI</label>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">ftp://</div>
+        </div>
+        <input type="text" class="form-control" id="uri" placeholder="url del servidor ftp" name="ftp_uri">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="user">Usuario</label>
+      <input type="text" min="0" class="form-control" id="user" name="ftp_user">
+    </div>
+    <div class="form-group">
+      <label for="password  ">Constraseña</label>
+      <input type="password" min="0" class="form-control" id="password" name="ftp_password">
+    </div>
+  </div>
+
+  <div>
+    <div>
+      <h2>Directorios para respaldo</h2>
+      <button id="add-dir-btn" class="btn btn-primary">Seleccionar carpetas</button>
+    </div>
+    <ul id="backup-folder-list" class="mt-3">
+    </ul>
+  </div>
+  <div class="mt-3">
+    <button id="save-btn" class="btn btn-primary">
+      Guardar
+    </button>
+    <button id="exit-btn" class="btn btn-secondary">
+      Salir
+    </button>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

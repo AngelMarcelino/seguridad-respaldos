@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "SistemaRespaldos": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

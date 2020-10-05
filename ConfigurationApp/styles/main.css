@@ -1,0 +1,11 @@
+body {
+  padding: 1em;
+}
+
+.float-right {
+  float: right;
+}
+
+.list-group-item {
+  overflow: auto;
+}

@@ -1,0 +1,7 @@
+{
+  "BackupIntervalInMinutes": 0.3,
+  "DestinationFtpUrl": "localhost:21",
+  "FtpUserName": "marce",
+  "FtpPassword": "123456",
+  "FoldersToBackup": []
+}
